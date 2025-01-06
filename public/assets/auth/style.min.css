@@ -1,0 +1,134 @@
+.credential-nav .nav-content{
+    display:flex;
+    height:75px;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap
+}
+.credential-nav .nav-content .brand a{
+    font-size:28px;
+    font-weight:500;
+    color:#fff
+}
+.credential-nav .nav-content .log{
+    font-weight:500
+}
+.credential-nav .nav-content .log span{
+    color:rgba(255,255,255,.7);
+    margin-right:8px
+}
+.credential-nav .nav-content .log a{
+    color:#fff
+}
+.credential-nav .nav-content .log a:hover{
+    text-decoration:underline
+}
+.login-section{
+    background:url("../images/bg-img/credential-bd.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color: black;
+}
+.login-section .cover{
+    min-height:100vh;
+    background: rgb(0 0 0 / 50%);;
+    display:flex;
+    align-items:center
+}
+.login-section .cover .company-description,.login-section .cover .form-content{
+    height:100%;
+    display:flex;
+    align-items:center
+}
+.login-section .cover .company-description>div,.login-section .cover .form-content>div{
+    width:100%
+}
+.login-section .cover .company-description{
+    position:relative
+}
+.login-section .cover .company-description::after{
+    content:"";
+    display:inline-block;
+    position:absolute;
+	/* border */
+    width:0px;
+	/* border */
+    height:100%;
+    right:-1px;
+    top:0;
+    background:rgba(255,255,255,.5)
+}
+.login-section .cover .company-description h2{
+    margin-bottom:25px;
+    color:#fff
+}
+.login-section .cover .company-description p{
+    color:rgba(255,255,255,.7);
+    font-size:17px
+}
+.login-section .cover .form-content h2{
+    margin-bottom:25px;
+    color:#fff
+}
+.login-section .cover .form-content .form-control{
+    background:none;
+    height:46px;
+    line-height:46px;
+    color:#fff
+}
+.login-section .cover .form-content .form-control:focus{
+    border-color:#fff;
+    box-shadow:none;
+    outline:none
+}
+.login-section .cover .form-content .form-control::-webkit-input-placeholder{
+    color:rgba(255,255,255,.7)
+}
+.login-section .cover .form-content .custom-checkbox{
+    margin-bottom:12px;
+    color:#fff;
+    cursor:pointer
+}
+.login-section .cover .form-content .custom-checkbox label{
+    cursor:pointer
+}
+.login-section .cover .form-content .custom-control-input:checked~.custom-control-label::before{
+    border-color:#0078d7;
+    background-color:#0078d7
+}
+.login-section .cover .action-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.login-section .cover .action-area .btn{
+    height:40px;
+    line-height:38px;
+    min-width:100px;
+    text-align:center;
+    background:#fff;
+    padding:0 15px;
+    color:#fff;
+    transition:all .2s;
+    background:#0078d7
+}
+.login-section .cover .action-area .btn:hover{
+    background:#0064b3
+}
+.login-section .cover .action-area a{
+    color:#fff;
+    font-weight:500
+}
+.login-section .cover .action-area a:hover{
+    text-decoration:underline
+}
+@media only screen and (max-width: 991px){
+    .company-description::after{
+        display:none !important
+    }
+}
+.form-check-label{
+    user-select:none;
+    cursor:pointer
+}
